@@ -18,6 +18,6 @@ after_success:
   - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
 
 notifications:
-  slack: whiplashmerch:MHxPysN9VrhGBNoJNclyQ5Ts
+  slack: whiplashmerch:9E4dRBCGVMosi0lAJvIDp9sC
 
 sudo: required
