@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "bugs": "https://github.com/whiplashmerch/horcrux/issues",
-  "author": ["Casey Baggz", "Matt Smith"],
+  "author": [
+    "Casey Baggz",
+    "Matt Smith"
+  ],
   "homepage": "https://www.getWhiplash.com/",
   "license": "MIT",
   "repository": "https://github.com/whiplashmerch/horcrux",
@@ -73,6 +76,7 @@
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
+    "react-addons-test-utils": "^15.5.1",
     "react-dev-utils": "^0.5.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
@@ -109,10 +113,7 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
-    },
-    "transformIgnorePatterns": [
-      "<rootDir>/(node_modules)" 
-    ]
+    }
   },
   "babel": {
     "presets": [
