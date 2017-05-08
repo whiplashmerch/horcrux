@@ -1,0 +1,12 @@
+codecov:
+  token: f6085744-b15a-49ab-85fc-afae6f914329
+
+coverage:
+  notify:
+    slack:
+      default:
+        url: "https://hooks.slack.com/services/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"
+        threshold: 1%
+        flags:
+          - frontend
+          - ui
