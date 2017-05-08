@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "bugs": "https://github.com/whiplashmerch/horcrux/issues",
-  "author": "Casey Baggz, Matt Smith",
+  "author": ["Casey Baggz", "Matt Smith"],
   "homepage": "https://www.getWhiplash.com/",
   "license": "MIT",
   "repository": "https://github.com/whiplashmerch/horcrux",
@@ -105,7 +105,7 @@
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+      "<rootDir>/(node_modules)"
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
@@ -116,7 +116,10 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "es2015",
+      "react",
+      "react-app",
+      "stage-0"
     ]
   },
   "eslintConfig": {
