@@ -109,7 +109,10 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
-    }
+    },
+    "transformIgnorePatterns": [
+      "<rootDir>/(node_modules)" 
+    ]
   },
   "babel": {
     "presets": [
