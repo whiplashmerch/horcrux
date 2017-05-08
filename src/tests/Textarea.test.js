@@ -27,25 +27,25 @@ describe('<Textarea />', () => {
 
   it('should have a default inputLabel prop', () => {
     const prop = defaultWrapper.props().inputLabel;
-    expect(prop).to.not.equal(undefined);
-    expect(prop).to.not.equal('');
-    expect(prop).to.equal(null);
+    expect(prop).not.toEqual(undefined);
+    expect(prop).not.toEqual('');
+    expect(prop).toEqual(null);
   });
 
   it('should accept a inputLabel prop', () => {
     const prop = wrapper.props().inputLabel;
-    expect(prop).to.not.equal(null);
-    expect(prop).to.not.equal(undefined);
-    expect(prop).to.not.equal('');
-    expect(prop).to.equal(props.inputLabel);
+    expect(prop).not.toEqual(null);
+    expect(prop).not.toEqual(undefined);
+    expect(prop).not.toEqual('');
+    expect(prop).toEqual(props.inputLabel);
   });
 
   it('should accept all other props given', () => {
     const prop = wrapper.props().placeholder;
-    expect(prop).to.not.equal(null);
-    expect(prop).to.not.equal(undefined);
-    expect(prop).to.not.equal('');
-    expect(prop).to.equal(props.placeholder);
+    expect(prop).not.toEqual(null);
+    expect(prop).not.toEqual(undefined);
+    expect(prop).not.toEqual('');
+    expect(prop).toEqual(props.placeholder);
   });
 
   // COMPONENT
@@ -54,21 +54,21 @@ describe('<Textarea />', () => {
     const defaultText = defaultWrapper.find('.Textarea').text();
     const text = wrapper.find('.Textarea').text();
 
-    expect(text).to.not.equal(null);
-    expect(text).to.not.equal(undefined);
-    expect(text).to.not.equal('');
-    expect(text).to.equal(props.inputLabel);
+    expect(text).not.toEqual(null);
+    expect(text).not.toEqual(undefined);
+    expect(text).not.toEqual('');
+    expect(text).toEqual(props.inputLabel);
     // check for no prop
-    expect(defaultText).to.not.equal(undefined);
-    expect(defaultText).to.not.equal(null);
-    expect(defaultText).to.equal('');
+    expect(defaultText).not.toEqual(undefined);
+    expect(defaultText).not.toEqual(null);
+    expect(defaultText).toEqual('');
   });
 
   it('should display a textarea input', () => {
     const el = wrapper.find('.Textarea-input').length;
-    expect(el).to.not.equal(null);
-    expect(el).to.not.equal(undefined);
-    expect(el).to.not.equal(0);
-    expect(el).to.equal(1);
+    expect(el).not.toEqual(null);
+    expect(el).not.toEqual(undefined);
+    expect(el).not.toEqual(0);
+    expect(el).toEqual(1);
   });
 });
