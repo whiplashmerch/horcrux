@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import NavMenu from './components/NavMenu';
 
 import Logo from './images/logo.svg';
 import WhiplashLogo from './images/whiplash-logo.svg';
-import s from './Home.css';
+import './Home.css';
 
 
 export default class Home extends Component {
@@ -34,8 +35,15 @@ export default class Home extends Component {
 
 
   render() {
+    const { mobileNavActive } = this.state;
+
     return(
-      <div className="Home">
+      <div className="Home animated fadeIn">
+        <NavMenu
+          active={ mobileNavActive }
+          closeNav={ this._hideNav }
+        />
+
         <div className="Home-Navicon" onClick={ this._showNav }>
           <span className="Home-Navicon-bar" />
           <span className="Home-Navicon-bar" />
