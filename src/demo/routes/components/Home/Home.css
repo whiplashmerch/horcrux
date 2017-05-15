@@ -1,0 +1,122 @@
+.Home {
+  background:
+    url(./images/background-mobile.jpg)
+    no-repeat
+    center
+    center
+    transparent;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.Home-logo-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 9.9375rem;
+  max-width: 33.375rem;
+  width: 80%;
+}
+
+.Home-logo {
+  display: inline-block;
+  opacity: 0;
+  width: 100%;
+}
+
+.Home-logo.fadeIn {
+  opacity: 1;
+}
+
+.Home-feature {
+  bottom: 18%;
+  left: 0;
+  padding-left: 2.125rem;
+  position: absolute;
+  text-align: left;
+}
+
+.Home-title {
+  color: #F1F0F0;
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.Home-bar {
+  background-color: #1D7452;
+  display: inline-block;
+  height: 1px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 12.875rem;
+}
+
+.Home-sub-title {
+  color: #aaa;
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.Home-footer {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  padding-bottom: 1.1875rem;
+  right: 0;
+}
+
+.Home-footer-copy {
+  color: #1D7452;
+  font-size: 0.625rem;
+  padding-bottom: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.Home-whiplash-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8.625rem;
+}
+
+.Home-whiplash {
+  display: inline-block;
+  opacity: 0;
+  margin-left: -0.3rem;
+  width: 100%;
+}
+
+.Home-whiplash.fadeIn {
+  opacity: 1;
+}
+
+.Home-Navicon {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 1.5rem;
+  justify-content: space-between;
+  left: 1.375rem;
+  position: absolute;
+  top: 1.375rem;
+  width: 2.0625rem;
+}
+
+.Home-Navicon-bar {
+  background-color: #aaa;
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+
+
+/*===========================================
+                BREAKPOINTS
+===========================================*/
+/*@media only screen and (min-width: 768px) {
+
+}*/

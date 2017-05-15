@@ -1,5 +1,26 @@
+html,
+body {
+  color: #303030;
+  font-family: 'Lato', 'Aller-Light', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  letter-spacing: 0.03rem;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Aller-Light', 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.0245rem;
+}
+
+.root {
+  height: 100%;
+  width: 100%;
 }
