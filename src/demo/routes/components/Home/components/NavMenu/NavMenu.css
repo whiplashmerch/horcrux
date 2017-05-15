@@ -1,0 +1,40 @@
+.NavMenu {
+  animation-duration: 500ms !important;
+  background-image: linear-gradient(-43deg, #1D7452 0%, rgba(0,0,0,0.90) 65%, #000000 100%);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.NavMenu-ul {
+  list-style: none;
+  padding-left: 2.235294118rem;
+  width: 100%;
+}
+
+.NavMenu-link {
+  color: #F1F0F0;
+  display: inline-block;
+  font-size: 2.25rem;
+  padding-bottom: 1.875rem;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.NavMenu-close-btn {
+  bottom: 4.3125rem;
+  color: #F1F0F0;
+  display: block;
+  font-size: 0.875rem;
+  left: 2.294117647rem;
+  position: absolute;
+  text-transform: capitalize;
+}

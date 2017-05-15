@@ -5,6 +5,7 @@ import App from './demo/App';
 
 import 'normalize.css';
 import 'animate.css';
+import 'fonts/index.css';
 import './index.css';
 
 

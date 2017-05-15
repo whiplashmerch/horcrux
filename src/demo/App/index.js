@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import Button from 'components/Button';
-import './App.css';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import {
+  Home
+} from '../routes';
 
 
 export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
+      <Router>
 
-        <Button />
-      </div>
+
+        <Route exact path="/" component={ Home } />
+      </Router>
     );
   }
 }
