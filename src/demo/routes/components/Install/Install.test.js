@@ -14,6 +14,4 @@ describe('<Install />', () => {
     ReactDOM.render(<Install />, div);
   });
 
-  // COMPONENT
-
 });
