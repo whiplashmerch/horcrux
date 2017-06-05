@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+
+import Logo from './images/horizontal-logo.svg';
 import './NavMenu.css';
 
 
@@ -57,6 +59,16 @@ export default class NavMenu extends Component {
 
     return(
       <div className={ mainClass }>
+        <div className="NavMenu-logo-wrapper">
+          <img
+            alt="logo"
+            className="NavMenu-logo"
+            src={ Logo }
+          />
+        </div>
+
+        <span className="NavMenu-filler" />
+
         <ul className="NavMenu-ul">
           {
             this.list.map((item, index) => (

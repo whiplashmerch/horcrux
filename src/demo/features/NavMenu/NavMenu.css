@@ -39,14 +39,20 @@
   text-transform: capitalize;
 }
 
+.NavMenu-logo-wrapper {
+  display: none;
+}
+
 
 /*===========================================
                 BREAKPOINTS
 ===========================================*/
 @media only screen and (min-width: 768px) {
   .NavMenu {
+    align-items: center;
     background-image: none;
     bottom: initial;
+    display: flex;
     height: initial;
     left: 0;
     padding: 0;
@@ -61,13 +67,29 @@
     background-image: linear-gradient(43deg, #000 0%, rgba(0,0,0,0.79) 65%, #1D7452 100%);
   }
 
+  .NavMenu-logo-wrapper {
+    display: inline-block;
+    margin-left: 1.5rem;
+    width: 11.8125rem;
+  }
+
+  .NavMenu-logo {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .NavMenu-filler {
+    display: flex;
+    flex: 3;
+  }
+
   .NavMenu-ul {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
     overflow-x: hidden;
     padding-left: 0;
     padding-top: 1rem;
+    width: initial;
   }
 
   .NavMenu-link {
