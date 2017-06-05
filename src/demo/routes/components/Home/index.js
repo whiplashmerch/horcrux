@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavMenu from './components/NavMenu';
 import Button from 'components/Button';
 
 import Logo from './images/logo.svg';
@@ -8,24 +7,7 @@ import './Home.css';
 
 
 export default class Home extends Component {
-  state = {
-    mobileNavActive: false
-  }
-
-  componentDidMount() {
-    const { mobileNavActive } = this.state;
-    const desktop = window.innerWidth >= 768;
-
-    if (desktop && !mobileNavActive) {
-      this.setState({ mobileNavActive: true });
-    }
-  }
-
   // PRIVATE
-
-  _hideNav = () => {
-    this.setState(({ mobileNavActive: false }));
-  }
 
   _loadImage = () => {
     if (!!this.img) {
@@ -39,27 +21,9 @@ export default class Home extends Component {
     }
   }
 
-  _showNav = () => {
-    this.setState(({ mobileNavActive: true }));
-  }
-
-
   render() {
-    const { mobileNavActive } = this.state;
-
     return(
       <div className="Home animated fadeIn">
-        <NavMenu
-          active={ mobileNavActive }
-          closeNav={ this._hideNav }
-        />
-
-        <div className="Home-Navicon" onClick={ this._showNav }>
-          <span className="Home-Navicon-bar" />
-          <span className="Home-Navicon-bar" />
-          <span className="Home-Navicon-bar" />
-        </div>
-
         <div className="Home-logo-wrapper">
           <img
             alt="logo"

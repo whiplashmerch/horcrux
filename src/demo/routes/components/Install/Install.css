@@ -1,0 +1,61 @@
+.Install {
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 6rem;
+}
+
+.Install-title {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.Install-copy,
+.Install-text-link {
+  color: #979797;
+  font-family: 'Lato', 'Aller-Light', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.Install-copy {
+  max-width: 41.75rem;
+  line-height: 1.5;
+}
+
+.Install-text-link {
+  color: #1D7452;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  text-decoration: none;
+}
+
+.Install-text-link:hover {
+  color: #aaa;
+}
+
+.Install-pill-wrapper {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.Install-pill {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.Install-feature {
+  padding-top: 2rem;
+}
+
+.Install-future-list {
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+.Install-li {
+  padding-top: 0.5rem;
+}

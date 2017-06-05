@@ -97,25 +97,6 @@
   opacity: 1;
 }
 
-.Home-Navicon {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  height: 1.5rem;
-  justify-content: space-between;
-  left: 1.375rem;
-  position: absolute;
-  top: 1.375rem;
-  width: 2.0625rem;
-}
-
-.Home-Navicon-bar {
-  background-color: #aaa;
-  display: block;
-  height: 2px;
-  width: 100%;
-}
-
 
 
 /*===========================================
@@ -130,10 +111,6 @@
       center
       #212020;
     background-size: cover;
-  }
-
-  .Home-Navicon {
-    display: none;
   }
 
   .Home-logo-wrapper {

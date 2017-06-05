@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  background-color: rgba(241, 240, 240, 0.3);
+}
+
 html,
 body {
   box-sizing: border-box;

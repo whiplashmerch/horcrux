@@ -1,0 +1,29 @@
+.App-Navicon {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 1.5rem;
+  justify-content: space-between;
+  left: 1.375rem;
+  position: absolute;
+  top: 1.375rem;
+  width: 2.0625rem;
+  z-index: 100;
+}
+
+.App-Navicon-bar {
+  background-color: #aaa;
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+
+/*===========================================
+                BREAKPOINTS
+===========================================*/
+@media only screen and (min-width: 768px) {
+  .App-Navicon {
+    display: none;
+  }
+}
