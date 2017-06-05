@@ -48,11 +48,13 @@
     background-image: none;
     bottom: initial;
     height: initial;
-    left: initial;
+    left: 0;
     padding: 0;
-    position: relative;
-    right: initial;
-    top: initial;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 900;
   }
 
   .NavMenu-ul {
