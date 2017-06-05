@@ -50,3 +50,12 @@
 .Install-feature {
   padding-top: 2rem;
 }
+
+.Install-future-list {
+  padding-top: 1rem;
+  list-style-position: inside;
+}
+
+.Install-li {
+  padding-top: 0.5rem;
+}
