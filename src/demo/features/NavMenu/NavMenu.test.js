@@ -54,6 +54,15 @@ describe('<NavMenu />', () => {
 
   // COMPONENT
 
+  it('should have a alt var accessible', () => {
+    const list = wrapper.instance().alt;
+
+    expect(list).not.toBeNull();
+    expect(list).toBeDefined();
+    expect(list).not.toEqual(true);
+    expect(list).toEqual(false);
+  });
+
   it('should have a list var accessible', () => {
     const list = wrapper.instance().list;
     const result = [
@@ -67,6 +76,14 @@ describe('<NavMenu />', () => {
     expect(list).toBeDefined();
     expect(list).not.toEqual([]);
     expect(list).toEqual(result);
+  });
+
+  it('should return a bool depending on brower pathname', () => {
+    const func = wrapper.instance()._notIndex;
+    expect(func).not.toBeNull();
+    expect(func).toBeDefined();
+    expect(() => func()).not.toThrow();
+    expect(func()).toEqual(false);
   });
 
   it('should return null if active prop false', () => {

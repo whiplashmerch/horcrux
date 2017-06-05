@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import './NavMenu.css';
 
 
@@ -16,6 +17,7 @@ export default class NavMenu extends Component {
 
   constructor() {
     super();
+    this.alt = this._notIndex();
     this.list = [
       { id: 0, text: 'installation', url: '/install' },
       { id: 1, text: 'components',   url: '/components' },
@@ -24,16 +26,37 @@ export default class NavMenu extends Component {
     ];
   }
 
+  componentWillReceiveProps() {
+    this.alt = this._notIndex();
+  }
+
+  // PRIVATE
+
+  _notIndex = () => {
+    const path = window.location.pathname;
+    if (path !== '/') {
+      return true;
+    }
+
+    return false;
+  }
+
 
   render() {
     const { active, closeNav } = this.props;
+    const mainClass = classnames(
+      'NavMenu',
+      'animated',
+      'fadeIn',
+      { alt: this.alt }
+    );
 
     if (!active) {
       return null;
     }
 
     return(
-      <div className="NavMenu animated fadeIn">
+      <div className={ mainClass }>
         <ul className="NavMenu-ul">
           {
             this.list.map((item, index) => (
