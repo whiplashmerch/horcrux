@@ -38,3 +38,39 @@
   position: absolute;
   text-transform: capitalize;
 }
+
+
+/*===========================================
+                BREAKPOINTS
+===========================================*/
+@media only screen and (min-width: 768px) {
+  .NavMenu {
+    background-image: none;
+    bottom: initial;
+    height: initial;
+    left: initial;
+    padding: 0;
+    position: relative;
+    right: initial;
+    top: initial;
+  }
+
+  .NavMenu-ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  .NavMenu-link {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-right: 1.8125rem;
+  }
+
+  .NavMenu-close-btn {
+    display: none;
+  }
+}

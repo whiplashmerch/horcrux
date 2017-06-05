@@ -60,6 +60,10 @@
   font-size: 1.25rem;
 }
 
+.Home-btn-container {
+  display: none;
+}
+
 .Home-footer {
   bottom: 0;
   left: 0;
@@ -117,6 +121,75 @@
 /*===========================================
                 BREAKPOINTS
 ===========================================*/
-/*@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .Home {
+    background:
+      url(./images/background-desktop.jpg)
+      no-repeat
+      center
+      center
+      #212020;
+    background-size: cover;
+  }
 
-}*/
+  .Home-Navicon {
+    display: none;
+  }
+
+  .Home-logo-wrapper {
+    padding-top: 5.9375rem;
+  }
+
+  .Home-feature {
+    bottom: initial;
+    left: initial;
+    padding-top: 5.25rem;
+    position: relative;
+    text-align: center;
+  }
+
+  .Home-title {
+    font-size: 3rem;
+    letter-spacing: 0.158125rem;
+  }
+
+  .Home-sub-title {
+    font-size: 1.875rem;
+    list-style: 0.178125rem;
+  }
+
+  .Home-btn-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 4.9375rem;
+  }
+
+  .Home-footer {
+    left: 1rem;
+  }
+
+  /* overrides */
+
+  .Home .Button:first-of-type {
+    margin-left: 0;
+  }
+}
+
+
+@media only screen and (min-width: 1480px) {
+  .Home-logo-wrapper {
+    padding-top: 10%;
+  }
+
+  .Home-feature {
+    bottom: 0;
+    height: 21.875rem;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 43.5rem;
+  }
+}

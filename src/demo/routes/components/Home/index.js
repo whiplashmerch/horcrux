@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavMenu from './components/NavMenu';
+import Button from 'components/Button';
 
 import Logo from './images/logo.svg';
 import WhiplashLogo from './images/whiplash-logo.svg';
@@ -9,6 +10,15 @@ import './Home.css';
 export default class Home extends Component {
   state = {
     mobileNavActive: false
+  }
+
+  componentDidMount() {
+    const { mobileNavActive } = this.state;
+    const desktop = window.innerWidth >= 768;
+
+    if (desktop && !mobileNavActive) {
+      this.setState({ mobileNavActive: true });
+    }
   }
 
   // PRIVATE
@@ -62,12 +72,23 @@ export default class Home extends Component {
 
         <div className="Home-feature">
           <h3 className="Home-title">
-            learn once, <br /> write anywhere
+            learn once,
+            <span className="br-mobile" />
+            write anywhere
           </h3>
           <span className="Home-bar" />
           <h5 className="Home-sub-title">
             UI Library built for React
           </h5>
+
+          <div className="Home-btn-container">
+            <Button
+              buttonText="get started"
+            />
+            <Button
+              buttonText="components"
+            />
+          </div>
         </div>
 
         <footer className="Home-footer">
