@@ -20,8 +20,8 @@ describe('<Home />', () => {
     const state = wrapper.state().mobileNavActive;
     expect(state).not.toBeNull();
     expect(state).toBeDefined();
-    expect(state).not.toEqual('false');
-    expect(state).toEqual(false);
+    expect(state).not.toEqual(false);
+    expect(state).toEqual(true); // JSDOM === desktop
   });
 
   // COMPONENT
